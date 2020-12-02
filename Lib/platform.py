@@ -1353,7 +1353,7 @@ _sys_version_parser = re.compile(
     r'\(#?([^,]+)'  # "(#buildno"
     r'(?:,\s*([\w ]*)'  # ", builddate"
     r'(?:,\s*([\w :]*))?)?\)\s*'  # ", buildtime)<space>"
-    r'\[([^\]]+)\]?')  # "[compiler]"
+    r'(?:\[([^\]]+)\])?')  # "[compiler]"
 
 _ironpython_sys_version_parser = re.compile(
     r'IronPython\s*'
